@@ -1,0 +1,91 @@
+h1{
+    color: black;
+}
+.indexejsbdy{
+    margin-inline-start:550px ;
+    margin-right: 157px;
+}
+.navbar{
+    height: 40px;
+    width: 400px;
+    padding-top: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbarhome{
+    margin-top: 9px;
+    /* width:100px ; */
+    height: 30px;
+    text-align: center;
+}
+.like{
+    width:250px;
+}
+.comment{
+    width:220px;
+}
+.react{
+    height: 30px;
+    width: 300px;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* .profilepicture{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+} */
+/* .profilepictureimg{
+    background-size: cover;
+} */
+.profilestats{
+    display: flex;
+    margin-top: 30px;
+}
+.profilefollwersfollowing{
+    margin-left:35px;
+    text-align: center;
+}
+.profile{
+    margin-left:500px;
+    margin-top: 50px;
+}
+.profilefollwersfollowingstats{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.postedimg{
+    width: 400px;
+    height: 900px;
+    display: flex;
+}
+.profilepictureimg{
+    margin-right: 13px;
+}
+/* label{
+    display: block;
+    width: 200px;
+    color: red;
+    border-radius:5px ;
+    cursor: pointer;
+}
+input{
+    display: none;
+} */
+.parentreel{
+    scroll-snap-type: y mandatory;
+}
+.reelsbox{
+    width: 400px;
+    height: 600px;
+    margin-left: 400px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    scroll-snap-align:start ;
+}

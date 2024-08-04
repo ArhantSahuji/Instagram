@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="profile">
+        <h1><b><%= post.name %></b></h1>
+        <div class="profilestats">
+            <!-- <div class="profilepicture"> -->
+                <img class="profilepictureimg" src="<%= post.profilepic %>" height="200px" width="200px">
+            <!-- </div> -->
+            <div class="profilefollwersfollowingstats">
+                <div class="profilefollwersfollowing">
+                    <h2><b>Followers</b></h2>
+                    <h2><b><%=post.followers%></b></h2>
+                </div>
+                <div class="profilefollwersfollowing">
+                    <h2><b>Following</b></h2>
+                    <h2><b><%=post.following%></b></h2>
+                </div>
+            </div>
+        </div>
+        <a href="http://localhost:8080/home/<%= post.id %>/newpost"><button>new post</button></a>
+        <div class="postedimg">
+            <% for(let i in post.imglinks){%>
+                
+                    <img class="profilepictureimg" src="<%=post.imglinks[i]%>" height="115px" width="115px">
+                
+            <%}%>
+        </div>
+    </div>
+</body>
+</html>

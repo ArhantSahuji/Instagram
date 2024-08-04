@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="indexejsbdy">
+        <div class="navbar">
+            <div class="navbarhome">
+                <a href="http://localhost:8080/home"><i class="fa-solid fa-house fa-xl" style="color: #000000;"></i></a>
+            </div>
+            <div class="navbarhome">
+                <a href="http://localhost:8080/home/reels"><i class="fa-solid fa-clapperboard fa-xl" style="color: #000000;"></i></a>
+            </div>
+            <div class="navbarhome">
+                <a href="http://localhost:8080/home"><i class="fa-solid fa-house fa-xl" style="color: #000000;"></i></a>
+            </div>
+        </div>
+        <div class="main">
+            <% for(post of posts){ %>
+                <h2><b><a href="http://localhost:8080/home/<%= post.id%>/profile"><%= post.name %></a></b></h2>
+                <img class="images" src="<%= post.image %>" height="470px" width="400px">
+                <br>
+                <div class="react">
+                    <div class="like">
+                        <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                        <b> <%= post.likes %></b>
+                    </div>
+                    <div class="comment">
+                        <a href="http://localhost:8080/home/<%= post.id%>/comments"><i class="fa-regular fa-comment" style="color: #000000;"></i><b>Add comment</b><a>
+                    </div>
+                    <!-- <div class="like">
+                        <a href="http://localhost:8080/posts//comment"><i class="fa-regular fa-share" style="color: #000000;"></i><b> coments</b><a>
+                        
+                    </div> -->
+                </div>
+                <p><b>Your comment : </b><%= post.comment%></p>
+
+                <br>
+            <% } %>
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
